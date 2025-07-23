@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Egg Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="custom-header">
+    <span>Egg Timer</span>
+    <div id="window-controls">
+      <button id = "min-btn">
+	    <img src = "assests/btns/minimize.png" alt="Minimizar">
+	  </button>
+	  <button id = "close-btn">
+		<img src = "assests/btns/close.png" alt="Cerrar">
+	  </button>
+    </div>
+  </div>
+
+  <div id="selection-screen">
+	<h1>Select the option</h1>
+	<div id="buttons">
+	  <button data-minutes="5">
+		<img src="assests/btns/pasado.png">
+		<h3>Soft</h3>
+	  </button>
+	  <button data-minutes="6">
+		<img src="assests/btns/blando.png">
+		<h3>Mollet</h3>
+	  </button>
+	  <button data-minutes="7">
+		<img src="assests/btns/medio.png">
+		<h3>Medium</h3>
+	  </button>
+	  <button data-minutes="10">
+		<img src="assests/btns/duro.png">
+		<h3>Hard</h3>
+	  </button>
+	</div>
+  </div>
+
+  <!-- Pantalla del temporizador -->
+  <div id="timer-screen" style="display: none;">
+	<div id="animation">
+	  <img src="assests/animation/frame0.png" alt="Frame 1">
+	  <img src="assests/animation/frame1.png" alt="Frame 2">
+	  <img src="assests/animation/frame2.png" alt="Frame 3">
+	  <img src="assests/animation/frame3.png" alt="Frame 4">
+	  <img src="assests/animation/frame4.png" alt="Frame 5">
+	  <img src="assests/animation/frame5.png" alt="Frame 6">
+	  <img src="assests/animation/frame6.png" alt="Frame 7">
+	  <img src="assests/animation/frame7.png" alt="Frame 8">
+	  <img src="assests/animation/frame8.png" alt="Frame 9">
+	  <img src="assests/animation/frame9.png" alt="Frame 10">
+	</div>
+	<h2 id="countdown">00:00</h2>
+	<div id="timer-controls">
+	  <button id="back-btn">↩</button>
+	  <button id="pause-btn">⏸</button>
+	  <button id="reset-btn">⏹</button>
+	</div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
